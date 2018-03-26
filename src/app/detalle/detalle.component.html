@@ -1,0 +1,12 @@
+<div class="listado">
+  <h2 *ngIf = "!pictures">Cargando fotos de {{perro}}, por favor espere</h2>
+  <br>
+  <br>
+  <h2>Fotos de {{perro}}</h2>
+  <br>
+  <ul>
+
+    	<img src="{{picture}}" *ngFor="let picture of pictures">     
+
+   </ul>
+ </div>    

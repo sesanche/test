@@ -1,0 +1,15 @@
+<div class="listado">
+  <h1>Listado Razas de perro</h1>
+  <br>
+  <h2 *ngIf = "!breeds">Cargando listado, por favor espere</h2>
+  <ul>
+    <li *ngFor="let breed of breeds">
+    <a [routerLink]="['/detalle']" (click)="myEvent(breed)">
+    {{breed}}
+    </a>     
+     </li>
+   </ul>
+ </div>    
+<div>
+	<app-detalle></app-detalle>
+</div>
